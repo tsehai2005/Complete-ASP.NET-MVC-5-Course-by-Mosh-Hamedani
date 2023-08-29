@@ -181,10 +181,65 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308281256104_UpadteModels.cs" />
+    <Compile Include="Migrations\202308281256104_UpadteModels.Designer.cs">
+      <DependentUpon>202308281256104_UpadteModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281257308_AddMemebrshiptType.cs" />
+    <Compile Include="Migrations\202308281257308_AddMemebrshiptType.Designer.cs">
+      <DependentUpon>202308281257308_AddMemebrshiptType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281311044_MakeNameRequred.cs" />
+    <Compile Include="Migrations\202308281311044_MakeNameRequred.Designer.cs">
+      <DependentUpon>202308281311044_MakeNameRequred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281331005_AddMembershipType.cs" />
+    <Compile Include="Migrations\202308281331005_AddMembershipType.Designer.cs">
+      <DependentUpon>202308281331005_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281335516_AddMembershipTypeUpdate.cs" />
+    <Compile Include="Migrations\202308281335516_AddMembershipTypeUpdate.Designer.cs">
+      <DependentUpon>202308281335516_AddMembershipTypeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281407547_AddMembershipTypeName.cs" />
+    <Compile Include="Migrations\202308281407547_AddMembershipTypeName.Designer.cs">
+      <DependentUpon>202308281407547_AddMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281408167_AddMembershipTypeName1.cs" />
+    <Compile Include="Migrations\202308281408167_AddMembershipTypeName1.Designer.cs">
+      <DependentUpon>202308281408167_AddMembershipTypeName1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281420287_AddCusytomerBirthDate.cs" />
+    <Compile Include="Migrations\202308281420287_AddCusytomerBirthDate.Designer.cs">
+      <DependentUpon>202308281420287_AddCusytomerBirthDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281450454_UpdateMovieModel.cs" />
+    <Compile Include="Migrations\202308281450454_UpdateMovieModel.Designer.cs">
+      <DependentUpon>202308281450454_UpdateMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281452217_UpdateMovieModel1.cs" />
+    <Compile Include="Migrations\202308281452217_UpdateMovieModel1.Designer.cs">
+      <DependentUpon>202308281452217_UpdateMovieModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281454032_AddGenre.cs" />
+    <Compile Include="Migrations\202308281454032_AddGenre.Designer.cs">
+      <DependentUpon>202308281454032_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281458354_PopulateGnre.cs" />
+    <Compile Include="Migrations\202308281458354_PopulateGnre.Designer.cs">
+      <DependentUpon>202308281458354_PopulateGnre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281512098_ToPopulateGenre.cs" />
+    <Compile Include="Migrations\202308281512098_ToPopulateGenre.Designer.cs">
+      <DependentUpon>202308281512098_ToPopulateGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -269,6 +324,47 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202308281256104_UpadteModels.resx">
+      <DependentUpon>202308281256104_UpadteModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281257308_AddMemebrshiptType.resx">
+      <DependentUpon>202308281257308_AddMemebrshiptType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281311044_MakeNameRequred.resx">
+      <DependentUpon>202308281311044_MakeNameRequred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281331005_AddMembershipType.resx">
+      <DependentUpon>202308281331005_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281335516_AddMembershipTypeUpdate.resx">
+      <DependentUpon>202308281335516_AddMembershipTypeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281407547_AddMembershipTypeName.resx">
+      <DependentUpon>202308281407547_AddMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281408167_AddMembershipTypeName1.resx">
+      <DependentUpon>202308281408167_AddMembershipTypeName1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281420287_AddCusytomerBirthDate.resx">
+      <DependentUpon>202308281420287_AddCusytomerBirthDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281450454_UpdateMovieModel.resx">
+      <DependentUpon>202308281450454_UpdateMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281452217_UpdateMovieModel1.resx">
+      <DependentUpon>202308281452217_UpdateMovieModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281454032_AddGenre.resx">
+      <DependentUpon>202308281454032_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281458354_PopulateGnre.resx">
+      <DependentUpon>202308281458354_PopulateGnre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281512098_ToPopulateGenre.resx">
+      <DependentUpon>202308281512098_ToPopulateGenre.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
