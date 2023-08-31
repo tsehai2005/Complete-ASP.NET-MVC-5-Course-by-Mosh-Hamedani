@@ -10,18 +10,21 @@ namespace Vidly.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Please enter customer name")]
         [StringLength(255)]
         public string Name { get; set; }
 
         public bool IsSubscribedToNewsletter { get; set; }
 
         [Display(Name="Membership Type")]
+        [Required(ErrorMessage ="Please select membership type")]
         public byte MembershipTypeId { get; set; }
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Date of Birth")]
-        //[Min18YearsIfAMember]
+        [Min18YearsIfMember]
         public DateTime? Birthdate { get; set; }
         public MembershipType MembershipType { get; set; }
+
+
     }
 }
